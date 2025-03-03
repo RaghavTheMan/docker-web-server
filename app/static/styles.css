@@ -1,0 +1,64 @@
+body {
+    background-color: #0d0d26;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffc107;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e0a800;
+}
+
+.movie-details {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.movie-poster {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.movie-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+.movie-info h2 {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #f00;
+    font-weight: bold;
+}
