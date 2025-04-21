@@ -40,7 +40,7 @@ pipeline {
       steps {
         sh '''
           docker rm -f movie-search 2>/dev/null || true
-          docker run -d --name movie-search -p 80:80 ${IMAGE}:latest
+          docker run -d --name movie-search -p 87:80 ${IMAGE}:latest
         '''
       }
     }
