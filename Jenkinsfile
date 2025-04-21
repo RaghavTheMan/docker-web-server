@@ -2,14 +2,14 @@ pipeline {
   agent any
 
   environment {
-    IMAGE = "yourdockerhubuser/movie-search"  // or just "movie-search" if local
+    IMAGE = "raghavboi/movie-app"  // or just "movie-search" if local
     CRED  = "dockerhub-creds"                // your Docker Hub creds ID, or leave blank to skip
   }
 
 
   stages {
     stage('Checkout') {
-      steps { git url: 'https://github.com/YourUser/movie-search.git', branch: 'main' }
+      steps { git url: 'https://github.com/RaghavTheMan/docker-web-server.git', branch: 'main' }
     }
 
     stage('Build Image') {
