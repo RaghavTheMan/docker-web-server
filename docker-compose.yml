@@ -20,14 +20,12 @@ services:
       - mynetwork
   jenkins:
     image: jenkins/jenkins:lts
-    container_name: jenkins-dev
-    user: root
     ports:
-      - "8084:8080"
-      - "50003:50000"
+      - "8080:8080"
     volumes:
       - jenkins_home:/var/jenkins_home
-      - /var/run/docker.sock:/var/run/docker.sock
+      - //var/run/docker.sock:/var/run/docker.sock  # 👈 Mount host Docker socket
+    privileged: true  # 👈 Allow docker-in-docker
     networks:
       - mynetwork
       
